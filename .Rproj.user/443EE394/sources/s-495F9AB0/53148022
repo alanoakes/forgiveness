@@ -1,0 +1,32 @@
+{
+    "id": "53148022",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1615409010519.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "Lex_Occurences",
+        "caption": "Lex_Occurences",
+        "totalObservations": 8,
+        "displayedObservations": 8,
+        "variables": 5,
+        "cacheKey": "ED0EFD6F",
+        "object": "Lex_Occurences",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Lex_Occurences&cache_key=ED0EFD6F&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1615408991,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615409010519,
+    "read_only": false,
+    "read_only_alternatives": []
+}

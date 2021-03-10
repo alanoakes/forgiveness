@@ -1,0 +1,32 @@
+{
+    "id": "B248E4E7",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1615409005876.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "Lex_Locations",
+        "caption": "Lex_Locations",
+        "totalObservations": 528,
+        "displayedObservations": 528,
+        "variables": 6,
+        "cacheKey": "37975F79",
+        "object": "Lex_Locations",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Lex_Locations&cache_key=37975F79&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7885362534758641253,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615409005876,
+    "read_only": false,
+    "read_only_alternatives": []
+}
