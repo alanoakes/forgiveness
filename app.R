@@ -33,9 +33,11 @@ ui <- fluidPage(
     
     mainPanel(
       tabsetPanel(type = "tabs",
-        tabPanel("Strongs Counts", plotOutput("barplot")),
-        tabPanel("Top Word Uses", plotOutput("barplot")),
-        tabPanel("Locations")
+        tabPanel("Strongs Counts", plotOutput("StrongsCounts")),
+        tabPanel("Top Word Uses", plotOutput("TopWordCounts")),
+        tabPanel("Locations", plotOutput("LocationsCount"))
+        
+        # resource: https://shiny.rstudio.com/articles/tabsets.html
       )
     )
   )
@@ -43,8 +45,25 @@ ui <- fluidPage(
 )
 
 # back end
-server <- function(input, output, session) {
+server <- function(input, output) {
   
+  d <- reactive({
+    var <- switch(input$var,
+                  "H3722 - כָּפַר - kāp̄ar" = H3722,
+                  "H5375 - נָשָׂא - nāśā'" = H5375,
+                  "H5545 - סָלַח - sālaḥ" = H5545,
+                  "H5546 - סַלָּח - sallāḥ" = H5546,
+                  "H5547 - סְלִיחָה - sᵊlîḥâ" = H5547,
+                  "G859 - ἄφεσις - aphesis" = G859,
+                  "G863 - ἀφίημι - aphiēmi" = G863,
+                  "G5483 - χαρίζομαι - charizomai" = G5483,
+                  H3722)
+  })
+  
+  output$StrongsCounts <- renderPlot({
+    var <- input$var
+    barplot(Lex_Occurences$Occurences)
+  })
 }
 
 shinyApp(ui, server)
