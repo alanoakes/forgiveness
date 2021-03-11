@@ -30,7 +30,7 @@ ui <- fluidPage(
                     "G863 - ἀφίημι - aphiēmi",
                     "G5483 - χαρίζομαι - charizomai"),
                     selected = "H3722 - כָּפַר - kāp̄ar"),
-      tags$a(href="www.blueletterbible.org//search/search.cfm?Criteria=forgive&t=KJV#s=s_primary_0_1", 'Data Source: KJV Search Results for "forgive"." Blue Letter Bible. Web. 10 Mar, 2021')
+      tags$a(href="www.blueletterbible.org//search/search.cfm?Criteria=forgive&t=KJV#s=s_primary_0_1", 'Data Source: KJV Search Results for "forgive"." Blue Letter Bible. Web. 10 Mar, 2021', target = 'blank')
     ),
     mainPanel(textOutput('this is text'))
   )
