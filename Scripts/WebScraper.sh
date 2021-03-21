@@ -17,7 +17,7 @@ for i in ${ArrayStrongs[@]}; do
 		 	lynx -stdin -dump -nolist -width=1024 |
 		 	grep "Unchecked Copy Box " |
 		 	sed 's/   Unchecked Copy Box //g' |
-			sed "s/^/${i} - /"  >> WebScraperOutput.txt
+			sed "s/^/${i} - /"  >> ../data/WebScraperOutput.txt
 
 	done
 done
